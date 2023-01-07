@@ -5,19 +5,22 @@ The purpose of the TMS (Travel Meet Sold) app is to bring together the features 
 
 Features:
 
-Consolidates features from various platforms (Instagram, OLX, Waze) in one app
-Enables online shopping from other individuals
-Provides navigation to destinations, including route planning and maps
-Allows you to organize meetups with friends
-Easily share your purchases and travel plans with others through social media platforms
+- Consolidates features from various platforms (Instagram, OLX, Waze) in one app
+- Enables online shopping from other individuals
+- Provides navigation to destinations, including route planning and maps
+- Allows you to organize meetups with friends
+- Easily share your purchases and travel plans with others through social media platforms
+
 Requirements:
 
-Android 6.0 or later
+- Android 6.0 or later
+
 Installation:
 
-Download the TMS app from the following link: https://drive.google.com/file/d/1qk6O4ud-NZ6oFIbNnU7UQ5cnkjzuXj3r/view?usp=share_link
-Open the app and create an account
-Begin using all the features!
+- Download the TMS app from the following link: https://drive.google.com/file/d/1qk6O4ud-NZ6oFIbNnU7UQ5cnkjzuXj3r/view?usp=share_link
+- Open the app and create an account
+- Begin using all the features!
+
 Support:
 If you have any questions or issues, please contact us at helpTMSapp@gmail.com.
 
