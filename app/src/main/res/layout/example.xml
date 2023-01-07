@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"></androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<androidx.core.widget.NestedScrollView-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="match_parent"-->
+    <!--    app:layout_constraintTop_toTopOf="parent"-->
+    <!--    app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--    android:backgroundTint="@color/cardview_light_background"-->
+
+    <!--    >-->
+
+    <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--        android:id="@+id/layout"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="vertical"-->
+    <!--        >-->
+
+    <!--        <include layout="@layout/topbar"/>-->
+
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/upload_image_background"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--            app:layout_constraintRight_toRightOf="parent"-->
+    <!--            android:src="@drawable/upload_image_background"-->
+    <!--            android:background="@color/turqoise"-->
+    <!--            android:layout_marginTop="@dimen/top_bar_height"-->
+    <!--            />-->
+
+    <!--        <androidx.recyclerview.widget.RecyclerView-->
+    <!--            android:id="@+id/fare_images_recycle_view"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="@dimen/fare_recycler_view_height"-->
+    <!--            android:layout_marginBottom="@dimen/fare_recycler_view_margin_bottom"-->
+    <!--            android:layout_marginStart="@dimen/fare_margin"-->
+    <!--            android:layout_marginEnd="@dimen/fare_margin"-->
+    <!--            app:layout_constraintBottom_toBottomOf="@id/upload_image_background"-->
+    <!--            app:layout_constraintLeft_toLeftOf="@id/upload_image_background"-->
+    <!--            android:orientation="horizontal"-->
+    <!--            >-->
+
+    <!--        </androidx.recyclerview.widget.RecyclerView>-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/fare_images_description"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginBottom="@dimen/fare_margin"-->
+    <!--            android:layout_marginStart="@dimen/fare_margin"-->
+    <!--            android:textColor="@color/text_edit"-->
+    <!--            app:layout_constraintBottom_toBottomOf="@id/upload_image_background"-->
+    <!--            app:layout_constraintLeft_toLeftOf="@id/upload_image_background"-->
+    <!--            />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/fare_images_error"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:textColor="@color/fare_error"-->
+    <!--            android:layout_marginTop="2dp"-->
+    <!--            app:layout_constraintTop_toBottomOf="@id/upload_image_button"-->
+    <!--            app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--            app:layout_constraintRight_toRightOf="parent"-->
+    <!--            />-->
+
+    <!--        <ImageButton-->
+    <!--            android:id="@+id/upload_image_button"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginTop="@dimen/fare_upload_image_button_margin_top"-->
+    <!--            app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="@id/upload_image_background"-->
+    <!--            app:layout_constraintRight_toRightOf="parent"-->
+    <!--            android:background="@null"-->
+    <!--            android:src="@drawable/upload_image_button"-->
+    <!--            />-->
+
+    <!--        <androidx.appcompat.widget.SwitchCompat-->
+    <!--            android:id="@+id/switch_id"-->
+    <!--            android:layout_width="@dimen/fare_switch_width"-->
+    <!--            android:layout_height="@dimen/fare_switch_height"-->
+    <!--            android:layout_marginStart="@dimen/fare_margin"-->
+    <!--            android:layout_marginTop="@dimen/fare_margin_top"-->
+    <!--            app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--            app:layout_constraintTop_toBottomOf="@id/upload_image_background"-->
+    <!--            app:track="@drawable/fare_switch_track"-->
+    <!--            android:theme="@style/fare_switch"-->
+
+    <!--            />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/tv_inactive"-->
+    <!--            android:layout_width="@dimen/fare_in_active_width"-->
+    <!--            android:layout_height="@dimen/fare_in_active_height"-->
+    <!--            android:fontFamily="sans-serif"-->
+    <!--            android:layout_marginStart="@dimen/fare_in_active_margin_start"-->
+    <!--            android:textSize="@dimen/fare_text_size_16"-->
+    <!--            android:textStyle="bold"-->
+    <!--            android:textColor="@color/text_inactive"-->
+    <!--            android:layout_marginTop="@dimen/fare_in_active_margin_top"-->
+    <!--            android:text="@string/fare_inactive"-->
+    <!--            app:layout_constraintLeft_toRightOf="@+id/switch_id"-->
+    <!--            app:layout_constraintTop_toBottomOf="@+id/upload_image_background"-->
+    <!--            />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/tv_date"-->
+    <!--            android:layout_width="@dimen/fare_date_width"-->
+    <!--            android:layout_height="@dimen/fare_date_height"-->
+    <!--            android:layout_marginTop="@dimen/fare_date_marginTop"-->
+    <!--            android:layout_marginEnd="@dimen/fare_margin"-->
+    <!--            android:elegantTextHeight="true"-->
+    <!--            android:fontFamily="sans-serif"-->
+    <!--            android:text="@string/fare_date"-->
+    <!--            android:textAlignment="textEnd"-->
+    <!--            android:textColor="@color/text_date"-->
+    <!--            android:textSize="@dimen/fare_text_size_12"-->
+    <!--            app:layout_constraintRight_toRightOf="parent"-->
+    <!--            app:layout_constraintTop_toBottomOf="@id/upload_image_background"-->
+    <!--            />-->
+
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/tv_giveUs"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="@dimen/fare_text_high"-->
+    <!--            android:layout_marginStart="@dimen/fare_margin"-->
+    <!--            android:layout_marginTop="@dimen/fare_give_us_margin_top"-->
+    <!--            android:layout_marginBottom="@dimen/fare_margin"-->
+    <!--            android:layout_marginEnd="@dimen/fare_margin"-->
+    <!--            android:fontFamily="sans-serif"-->
+    <!--            android:textStyle="bold"-->
+    <!--            android:textSize="@dimen/fare_text_size_16"-->
+    <!--            android:textColor="@color/text_title"-->
+    <!--            android:text="@string/fare_give_us"-->
+    <!--            app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--            app:layout_constraintTop_toBottomOf="@id/switch_id" />-->
+
+
+    <!--        <com.google.android.material.textfield.TextInputLayout-->
+    <!--            android:id="@+id/title_container"-->
+    <!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="@dimen/fare_edit_text_box_height"-->
+    <!--            android:layout_marginStart="@dimen/fare_margin"-->
+    <!--            android:layout_margin="@dimen/fare_margin"-->
+    <!--            android:layout_marginTop="@dimen/fare_edit_text_margin_top"-->
+    <!--            android:layout_marginBottom="@dimen/fare_edit_text_margin_bottom"-->
+    <!--            app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--            app:counterEnabled="true"-->
+    <!--            app:counterMaxLength="30"-->
+    <!--            app:helperTextTextColor="@color/fare_error"-->
+    <!--            android:textColorHint="@color/text_edit"-->
+    <!--            app:hintTextColor="@color/text_edit"-->
+    <!--            app:boxStrokeColor="@color/text_edit"-->
+    <!--            app:layout_constraintTop_toBottomOf="@+id/tv_giveUs"-->
+    <!--            app:boxCornerRadiusTopStart="@dimen/fare_box_0dp"-->
+    <!--            app:boxCornerRadiusTopEnd="@dimen/fare_box_0dp"-->
+    <!--            app:boxCornerRadiusBottomStart="@dimen/fare_box_0dp"-->
+    <!--            app:boxCornerRadiusBottomEnd="@dimen/fare_box_0dp"-->
+    <!--            >-->
+    <!--            <com.google.android.material.textfield.TextInputEditText-->
+    <!--                android:id="@+id/title_edit_text"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="@dimen/fare_edit_text_height"-->
+    <!--                android:lines="1"-->
+    <!--                android:hint="@string/fare_title"-->
+    <!--                android:inputType="text" />-->
+    <!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+
+    <!--        <com.google.android.material.textfield.TextInputLayout-->
+    <!--            android:id="@+id/price_container"-->
+    <!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="@dimen/fare_edit_text_box_height"-->
+    <!--            android:layout_marginStart="@dimen/fare_margin"-->
+    <!--            android:layout_margin="@dimen/fare_margin"-->
+    <!--            android:layout_marginTop="@dimen/fare_edit_text_margin_top"-->
+    <!--            android:layout_marginBottom="@dimen/fare_edit_text_margin_bottom"-->
+    <!--            app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--            app:counterEnabled="true"-->
+    <!--            app:counterMaxLength="10"-->
+    <!--            app:helperTextTextColor="@color/fare_error"-->
+    <!--            android:textColorHint="@color/text_edit"-->
+    <!--            app:hintTextColor="@color/text_edit"-->
+    <!--            app:boxStrokeColor="@color/text_edit"-->
+    <!--            app:boxCornerRadiusTopStart="@dimen/fare_box_0dp"-->
+    <!--            app:boxCornerRadiusTopEnd="@dimen/fare_box_0dp"-->
+    <!--            app:boxCornerRadiusBottomStart="@dimen/fare_box_0dp"-->
+    <!--            app:boxCornerRadiusBottomEnd="@dimen/fare_box_0dp"-->
+    <!--            app:layout_constraintTop_toBottomOf="@+id/title_container"-->
+    <!--            >-->
+    <!--            <com.google.android.material.textfield.TextInputEditText-->
+    <!--                android:id="@+id/price_edit_text"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="@dimen/fare_edit_text_height"-->
+    <!--                android:lines="1"-->
+    <!--                android:hint="@string/fare_price"-->
+    <!--                android:inputType="number" />-->
+    <!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+    <!--        <Spinner-->
+    <!--            android:id="@+id/spinner_price"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="@dimen/fare_spinner_height"-->
+    <!--            android:layout_marginTop="@dimen/fare_spinner_margin_top"-->
+    <!--            android:layout_marginEnd="@dimen/fare_spinner_margin_end"-->
+    <!--            android:entries="@array/currency"-->
+    <!--            app:layout_constraintRight_toRightOf="parent"-->
+    <!--            app:layout_constraintTop_toBottomOf="@id/title_container" />-->
+
+
+    <!--        <com.google.android.material.textfield.TextInputLayout-->
+    <!--            android:id="@+id/amount_container"-->
+    <!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="@dimen/fare_edit_text_box_height"-->
+    <!--            android:layout_marginStart="@dimen/fare_margin"-->
+    <!--            android:layout_margin="@dimen/fare_margin"-->
+    <!--            android:layout_marginTop="@dimen/fare_edit_text_margin_top"-->
+    <!--            android:layout_marginBottom="@dimen/fare_edit_text_margin_bottom"-->
+    <!--            app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--            app:counterEnabled="true"-->
+    <!--            app:counterMaxLength="10"-->
+    <!--            app:helperTextTextColor="@color/fare_error"-->
+    <!--            android:textColorHint="@color/text_edit"-->
+    <!--            app:hintTextColor="@color/text_edit"-->
+    <!--            app:boxStrokeColor="@color/text_edit"-->
+    <!--            app:boxCornerRadiusTopStart="@dimen/fare_box_0dp"-->
+    <!--            app:boxCornerRadiusTopEnd="@dimen/fare_box_0dp"-->
+    <!--            app:boxCornerRadiusBottomStart="@dimen/fare_box_0dp"-->
+    <!--            app:boxCornerRadiusBottomEnd="@dimen/fare_box_0dp"-->
+    <!--            app:layout_constraintTop_toBottomOf="@+id/price_container"-->
+    <!--            >-->
+    <!--            <com.google.android.material.textfield.TextInputEditText-->
+    <!--                android:id="@+id/amount_edit_text"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="@dimen/fare_edit_text_height"-->
+    <!--                android:lines="1"-->
+    <!--                android:hint="@string/fare_amount"-->
+    <!--                android:inputType="number" />-->
+    <!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+
+    <!--        <Spinner-->
+    <!--            android:id="@+id/spinner_amount"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="@dimen/fare_spinner_height"-->
+    <!--            android:layout_marginTop="@dimen/fare_spinner_margin_top"-->
+    <!--            android:layout_marginEnd="@dimen/fare_spinner_margin_end"-->
+    <!--            android:entries="@array/amount"-->
+    <!--            app:layout_constraintRight_toRightOf="parent"-->
+    <!--            app:layout_constraintTop_toBottomOf="@id/price_container"-->
+
+    <!--            />-->
+
+
+    <!--        <com.google.android.material.textfield.TextInputLayout-->
+    <!--            android:id="@+id/description_container"-->
+    <!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="@dimen/fare_edit_text_box_height"-->
+    <!--            android:layout_marginStart="@dimen/fare_margin"-->
+    <!--            android:layout_margin="@dimen/fare_margin"-->
+    <!--            android:layout_marginTop="@dimen/fare_edit_text_margin_top"-->
+    <!--            android:layout_marginBottom="@dimen/fare_edit_text_margin_bottom"-->
+    <!--            app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--            app:counterEnabled="true"-->
+    <!--            app:counterMaxLength="150"-->
+    <!--            app:helperTextTextColor="@color/fare_error"-->
+    <!--            android:textColorHint="@color/text_edit"-->
+    <!--            app:hintTextColor="@color/text_edit"-->
+    <!--            app:boxStrokeColor="@color/text_edit"-->
+    <!--            app:boxCornerRadiusTopStart="@dimen/fare_box_0dp"-->
+    <!--            app:boxCornerRadiusTopEnd="@dimen/fare_box_0dp"-->
+    <!--            app:boxCornerRadiusBottomStart="@dimen/fare_box_0dp"-->
+    <!--            app:boxCornerRadiusBottomEnd="@dimen/fare_box_0dp"-->
+    <!--            app:layout_constraintTop_toBottomOf="@+id/amount_container"-->
+    <!--            >-->
+    <!--            <com.google.android.material.textfield.TextInputEditText-->
+    <!--                android:id="@+id/description_edit_text"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="@dimen/fare_edit_text_height"-->
+    <!--                android:lines="1"-->
+    <!--                android:hint="@string/fare_description"-->
+    <!--                android:inputType="text" />-->
+    <!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/tv_contact_details"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="@dimen/fare_text_high"-->
+    <!--            android:layout_marginStart="@dimen/fare_margin"-->
+    <!--            android:layout_marginTop="@dimen/fare_margin"-->
+    <!--            android:layout_marginEnd="@dimen/fare_margin"-->
+    <!--            android:textSize="@dimen/fare_text_size_16"-->
+    <!--            android:textStyle="bold"-->
+    <!--            android:textColor="@color/text_title"-->
+    <!--            android:text="@string/fare_contact_details"-->
+    <!--            app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--            app:layout_constraintTop_toBottomOf="@id/description_container"-->
+    <!--            />-->
+
+
+    <!--        <CheckedTextView-->
+    <!--            android:id="@+id/checked_name"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="@dimen/fare_text_box_high"-->
+    <!--            android:text="@string/fare_name"-->
+    <!--            android:textColor="@color/text_edit"-->
+    <!--            android:background="@drawable/fare_text_border"-->
+    <!--            android:checkMark="@drawable/checkmark"-->
+    <!--            android:checked="true"-->
+    <!--            android:textSize="@dimen/fare_text_size_16"-->
+    <!--            android:fontFamily="sans-serif"-->
+    <!--            android:layout_marginStart="@dimen/fare_margin"-->
+    <!--            android:layout_marginEnd="@dimen/fare_margin"-->
+    <!--            android:layout_marginTop="@dimen/fare_margin"-->
+    <!--            android:layout_marginBottom="@dimen/fare_edit_text_margin_bottom"-->
+    <!--            app:layout_constraintRight_toRightOf="parent"-->
+    <!--            app:layout_constraintTop_toBottomOf="@id/tv_contact_details"-->
+    <!--            />-->
+
+
+    <!--        <CheckedTextView-->
+    <!--            android:id="@+id/checked_email"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="@dimen/fare_text_box_high"-->
+    <!--            android:text="@string/fare_email"-->
+    <!--            android:textColor="@color/text_edit"-->
+    <!--            android:background="@drawable/fare_text_border"-->
+    <!--            android:checkMark="@drawable/checkmark"-->
+    <!--            android:checked="true"-->
+    <!--            android:textSize="@dimen/fare_text_size_16"-->
+    <!--            android:fontFamily="sans-serif"-->
+    <!--            android:layout_marginStart="@dimen/fare_margin"-->
+    <!--            android:layout_marginEnd="@dimen/fare_margin"-->
+    <!--            android:layout_marginTop="@dimen/fare_margin"-->
+    <!--            android:layout_marginBottom="@dimen/fare_edit_text_margin_bottom"-->
+    <!--            app:layout_constraintRight_toRightOf="parent"-->
+    <!--            app:layout_constraintTop_toBottomOf="@id/checked_name"-->
+    <!--            />-->
+
+
+    <!--        <CheckedTextView-->
+    <!--            android:id="@+id/checked_phone_nr"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="@dimen/fare_text_box_high"-->
+    <!--            android:text="@string/fare_phone_number"-->
+    <!--            android:textColor="@color/text_edit"-->
+    <!--            android:background="@drawable/fare_text_border"-->
+    <!--            android:checkMark="@drawable/checkmark"-->
+    <!--            android:checked="true"-->
+    <!--            android:textSize="@dimen/fare_text_size_16"-->
+    <!--            android:fontFamily="sans-serif"-->
+    <!--            android:layout_marginStart="@dimen/fare_margin"-->
+    <!--            android:layout_marginEnd="@dimen/fare_margin"-->
+    <!--            android:layout_marginTop="@dimen/fare_margin"-->
+    <!--            android:layout_marginBottom="@dimen/fare_edit_text_margin_bottom"-->
+    <!--            app:layout_constraintRight_toRightOf="parent"-->
+    <!--            app:layout_constraintTop_toBottomOf="@id/checked_email"-->
+    <!--            />-->
+
+    <!--        <androidx.appcompat.widget.AppCompatButton-->
+    <!--            android:id="@+id/bottom_button_preview"-->
+    <!--            android:layout_width="@dimen/fare_button_width"-->
+    <!--            android:layout_height="@dimen/fare_button_height"-->
+    <!--            android:text="@string/fare_button_preview"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:layout_marginTop="@dimen/fare_margin"-->
+    <!--            android:textSize="@dimen/fare_text_size_12"-->
+    <!--            android:background="@drawable/custom_button_fare"-->
+    <!--            android:textColor="@color/white"-->
+    <!--            android:textAllCaps="false"-->
+    <!--            android:fontFamily="sans-serif"-->
+    <!--            app:layout_constraintTop_toBottomOf="@id/map_frame"-->
+    <!--            app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--            app:layout_constraintRight_toRightOf="parent"-->
+
+
+    <!--            />-->
+
+    <!--        <androidx.appcompat.widget.AppCompatButton-->
+    <!--            android:id="@+id/bottom_button_launch"-->
+    <!--            android:layout_width="@dimen/fare_button_width"-->
+    <!--            android:layout_height="@dimen/fare_button_height"-->
+    <!--            android:text="@string/fare_button_launch"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:textSize="@dimen/fare_text_size_12"-->
+    <!--            android:layout_marginTop="@dimen/fare_margin"-->
+    <!--            android:layout_marginBottom="@dimen/fare_margin"-->
+    <!--            android:background="@drawable/custom_button_fare"-->
+    <!--            android:textColor="@color/white"-->
+    <!--            android:textAllCaps="false"-->
+    <!--            android:fontFamily="sans-serif"-->
+    <!--            app:layout_constraintTop_toBottomOf="@id/bottom_button_preview"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--            app:layout_constraintRight_toRightOf="parent"-->
+    <!--            />-->
+
+    <!--        <androidx.fragment.app.FragmentContainerView-->
+    <!--            android:name="com.example.bazaarapp.view.fragment.MapFragment"-->
+    <!--            android:id="@+id/map_frame"-->
+    <!--            android:layout_width="@dimen/frame_layout_width"-->
+    <!--            android:layout_height="@dimen/frame_layout_height"-->
+    <!--            app:layout_constraintTop_toBottomOf="@id/checked_phone_nr"-->
+    <!--            app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--            app:layout_constraintRight_toRightOf="parent"-->
+    <!--            android:layout_marginTop="@dimen/frame_layout_marginTop"-->
+    <!--            android:layout_marginStart="@dimen/frame_layout_marginStart"-->
+    <!--            android:layout_marginEnd="@dimen/frame_layout_marginEnd"/>-->
+
+    <!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    <!--</androidx.core.widget.NestedScrollView>-->

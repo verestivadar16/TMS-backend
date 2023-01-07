@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/startPage">
+    <fragment
+        android:id="@+id/startPage"
+        android:name="com.example.tms.view.fragment.StartFragment"
+        android:label="StartFragment"
+        tools:layout="@layout/start_page">
+        <action
+            android:id="@+id/action_startFragment_to_loginFragment"
+            app:destination="@id/loginPage" />
+        <action
+            android:id="@+id/action_startFragment_to_registerFragment"
+            app:destination="@id/registerPage" />
+        <action
+            android:id="@+id/action_startFragment_to_InstaFragment"
+            app:destination="@+id/home"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginPage"
+        android:name="com.example.tms.view.fragment.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/login_page">
+
+        <action
+            android:id="@+id/action_loginPage_to_startPage"
+            app:destination="@id/startPage" />
+        <action
+            android:id="@+id/action_loginPage_to_insta_page"
+            app:destination="@id/home" />
+        <action
+            android:id="@+id/action_loginPage_to_forgot_password_page"
+            app:destination="@+id/forgot_password" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgot_password"
+        android:name="com.example.tms.view.fragment.ForgotPasswordFragment"
+        android:label="ForgotPassword"
+        tools:layout="@layout/forgot_password">
+        <action
+            android:id="@+id/action_forgotPage_to_loginPage"
+            app:destination="@id/loginPage" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registerPage"
+        android:name="com.example.tms.view.fragment.RegisterFragment"
+        android:label="RegisterFragment"
+        tools:layout="@layout/registration_page">
+
+        <action
+            android:id="@+id/action_registerPage_to_startPage"
+            app:destination="@id/startPage" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/insta_upload"
+        android:name="com.example.tms.view.fragment.InstaUploadFragment"
+        android:label="InstaUploadFragment"
+        tools:layout="@layout/insta_upload_image">
+
+        <action
+            android:id="@+id/action_instauploadpage_to_instapostpage"
+            app:destination="@+id/home" />
+    </fragment>
+    <fragment
+        android:id="@+id/inbox_page"
+        android:name="com.example.tms.view.fragment.InboxPageFragment"
+        android:label="InboxPageFragment"
+        tools:layout="@layout/inbox_page">
+
+        <action
+            android:id="@+id/action_inboxpage_to_notificationpage"
+            app:destination="@id/notification_page" />
+
+        <action
+            android:id="@+id/action_inboxpage_to_homepage"
+            app:destination="@+id/home" />
+        <action
+            android:id="@+id/action_inboxpage_to_chatpage"
+            app:destination="@+id/chat_page" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/chat_page"
+        android:name="com.example.tms.view.fragment.ChatPageFragment"
+        android:label="ChatPageFragment"
+        tools:layout="@layout/chat_input">
+
+        <action
+            android:id="@+id/action_chatpage_to_inboxpage"
+            app:destination="@id/inbox_page" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.example.tms.view.fragment.InstaPostFragment"
+        android:label="InstaPostFragment"
+        tools:layout="@layout/insta_post">
+
+        <action
+            android:id="@+id/action_instapostpage_to_instauploadpage"
+            app:destination="@id/insta_upload" />
+
+        <action
+            android:id="@+id/action_instapostpage_to_loginpage"
+            app:destination="@+id/loginPage" />
+        <action
+            android:id="@+id/action_instapostpage_to_inboxpage"
+            app:destination="@+id/inbox_page" />
+        <action
+            android:id="@+id/action_instapostpage_to_profile_page"
+            app:destination="@id/profile_show_page" />
+        <action
+            android:id="@+id/action_instapostpage_to_mix_page"
+            app:destination="@id/mix_content_page" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/notification_page"
+        android:name="com.example.tms.view.fragment.NotificationFragment"
+        android:label="NotificationFragment"
+        tools:layout="@layout/notification_page">
+
+        <action
+            android:id="@+id/action_notificationpage_to_inboxpage"
+            app:destination="@id/inbox_page" />
+
+
+    </fragment>
+
+
+    <!-- navigation page-->
+    <fragment
+        android:id="@+id/navigation_page"
+        android:name="com.example.tms.view.fragment.NavigationPageFragment"
+        android:label="NavigationPageFragment"
+        tools:layout="@layout/navigation_page">
+        <action
+            android:id="@+id/action_navigation_to_instapostpage"
+            app:destination="@id/home" />
+        <action
+            android:id="@+id/action_navigation_to_ad_event_page"
+            app:destination="@id/add_event_page" />
+        <action
+            android:id="@+id/action_navigation_to_profile_page"
+            app:destination="@id/profile_show_page" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/add_event_page"
+        android:name="com.example.tms.view.fragment.AddEventFragment"
+        android:label="AddEvenetFragment"
+        tools:layout="@layout/add_event_page">
+        <action
+            android:id="@+id/action_addEventPage_to_navigationPage"
+            app:destination="@id/navigation_page" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/profile_page"
+        android:name="com.example.tms.view.fragment.ProfileFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/profile_page">
+        <action
+            android:id="@+id/action_profile_page_to_profile_show_page"
+            app:destination="@id/profile_show_page" />
+        <action
+            android:id="@+id/action_profile_page_to_start_page"
+            app:destination="@id/startPage" />
+        <action
+            android:id="@+id/action_profile_page_to_friends_page"
+            app:destination="@id/friend_list_page" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/profile_show_page"
+        android:name="com.example.tms.view.fragment.ProfileShowPageFragment"
+        android:label="ProfileShowPageFragment"
+        tools:layout="@layout/profile_show_page">
+        <action
+            android:id="@+id/action_profile_page_to_navigation_page"
+            app:destination="@id/navigation_page" />
+        <action
+            android:id="@+id/action_profile_show_page_to_friends_page"
+            app:destination="@id/friend_list_page" />
+        <action
+            android:id="@+id/action_profile_show_page_to_profile_page"
+            app:destination="@id/profile_page" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/market_page"
+        android:name="com.example.tms.view.fragment.MarketPageFragment"
+        android:label="MarketPageFragment"
+        tools:layout="@layout/market_page">
+
+        <action
+            android:id="@+id/action_marketpage_to_homepage"
+            app:destination="@id/home" />
+
+        <action
+            android:id="@+id/action_marketpage_to_newlistingpage"
+            app:destination="@+id/market_upload_page" />
+
+        <action
+            android:id="@+id/action_marketpage_to_profilpage"
+            app:destination="@+id/profile_page" />
+        <action
+            android:id="@+id/action_marketpage_to_searchitempage"
+            app:destination="@+id/profile_page" />
+
+        <action
+            android:id="@+id/action_marketpage_to_chatpage"
+            app:destination="@+id/chat_page" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/market_upload_page"
+        android:name="com.example.tms.view.fragment.MarketUploadFragment"
+        android:label="MArketUploadPageFragment"
+        tools:layout="@layout/market_upload_page">
+
+        <action
+            android:id="@+id/action_marketuploadpage_to_profilpage"
+            app:destination="@+id/profile_page" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/friend_list_page"
+        android:name="com.example.tms.view.fragment.FriendsFragment"
+        android:label="FriendsFragment"
+        tools:layout="@layout/friends_list">
+        <action
+            android:id="@+id/action_friends_page_to_add_friend_page"
+            app:destination="@id/add_friend_page" />
+        <action
+            android:id="@+id/action_friends_page_to_chatpage"
+            app:destination="@+id/chat_page" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/add_friend_page"
+        android:name="com.example.tms.view.fragment.AddFriendFragment"
+        android:label="AddFriendFragment"
+        tools:layout="@layout/add_friend_page">
+        <action
+            android:id="@+id/action_add_friend_page_to_friend_list_page"
+            app:destination="@id/friend_list_page" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/mix_page"
+        android:name="com.example.tms.view.fragment.MixPageFragment"
+        android:label="MixPageFragment"
+        tools:layout="@layout/mix_page">
+
+
+        <action
+            android:id="@+id/action_mix_page_to_profilepage"
+            app:destination="@id/profile_show_page" />
+        <action
+            android:id="@+id/action_mix_page_to_inboxpage"
+            app:destination="@id/inbox_page" />
+        <action
+            android:id="@+id/action_mix_page_to_mix_content_page"
+            app:destination="@id/mix_content_page"/>
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/mix_content_page"
+        android:name="com.example.tms.view.fragment.MixPageContent"
+        android:label="MixContentFragment"
+        tools:layout="@layout/mix_content_page">
+
+    </fragment>
+
+
+</navigation>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.activity.MainActivity"
+    android:background="@drawable/bacgroundtexture2">
+    <!--    android:padding="16dp"-->
+
+    <ImageButton
+        android:id="@+id/imageButton_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+
+        android:background="?android:attr/selectableItemBackground"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/backbutton1" />
+
+    <ImageButton
+        android:id="@+id/imageButton_to_Upload_image"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="184dp"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+
+        android:background="@color/transparent"
+
+        android:src="@drawable/addimagebuttontmscolor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_choose_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="84dp"
+        android:backgroundTint="@color/grey"
+        android:layout_centerHorizontal="true"
+        android:text="Select Image"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/edit_text_description"
+        android:layout_width="317dp"
+        android:layout_height="144dp"
+        android:layout_above="@+id/button_upload"
+        android:layout_alignParentTop="true"
+
+        android:layout_centerInParent="true"
+        android:layout_marginStart="-228dp"
+        android:layout_marginTop="478dp"
+        android:layout_marginBottom="7dp"
+        android:layout_toEndOf="@+id/button_choose_image"
+        android:background="@drawable/frame"
+        android:gravity="top|left"
+        android:hint="Your description here"
+        android:padding="10dp"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/button_upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="54dp"
+        android:backgroundTint="@color/blue"
+        android:text="Post"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="450dp"
+        android:text="Write a description"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/uploadedImage"
+        android:layout_width="344dp"
+        android:layout_height="232dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="170dp"
+        app:srcCompat="@drawable/uploadimage" />
+
+</RelativeLayout>
